@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Create</title>
+</head>
+
+<body>
+    <div class="container p-5">
+        <form method="post" action="/save">
+            <h3>Add Student</h3>
+            <div class="col-sm-6 pb-5">
+                <label for="rollno" class="label pt-3">Roll number</label>
+                <div class="pt-2">
+                    <input type="number" class="form-control" name="rollno" id="rollno">
+                </div>
+                <label for="name" class="label pt-3">Name</label>
+                <div class="pt-2">
+                    <input type="text" class="form-control" name="name" id="name">
+                </div>
+                <label for="gender" class="label pt-3">Gender</label>
+                <div class="pt-2">
+                    <select name="gender" class="form-control" id="gender">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <label for="email" class="label pt-3">Email</label>
+                <div class="pt-2">
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+                <label for="contactno" class="label pt-3">Contact No. </label>
+                <div class="pt-2">
+                    <input type="text" class="form-control" name="contactno" id="contactno">
+                </div>
+                <label for="address" class="label pt-3">Address</label>
+                <div class="pt-2">
+                    <input type="text" class="form-control" name="address" id="address">
+                </div>
+                <div class="pt-2">
+                    <input type="submit" value="Login" id="login" class="btn btn-outline-primary">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

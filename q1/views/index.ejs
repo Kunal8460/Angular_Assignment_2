@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container p-5">
+        <form method="post" enctype="multipart/form-data">
+            <h3>Single File Upload</h3>
+            <div class="col-sm-6 pb-5">
+                <label for="singleImage" class="label pt-3">Single File</label>
+                <div class="pt-2">
+                    <input type="file" class="form-control" name="singleImage" id="singleImage">
+                </div>
+                <div class="pt-2">
+                    <input type="submit" value="Upload" id="singleUpload" class="btn btn-outline-primary">
+                </div>
+            </div>
+        </form>
+
+        <form action="/multipleUpload" method="post" enctype="multipart/form-data">
+            <h3>Multiple File Upload</h3>
+            <div class="col-sm-6">
+                <label for="multipleImage" class="label pt-3">MultipleFile</label>
+                <input type="file" class="form-control" name="multipleImage" multiple="multiple" id="multipleImage">
+                <div class="pt-2">
+                    <input type="submit" value="Upload" id="multipleUpload" class="btn btn-outline-primary">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+<!-- <script>
+    document.getElementById("singleUpload").addEventListener("click", (e) => {
+        e.preventDefault()
+        const data = {
+            f
+        }
+        location.replace("/")
+    })
+</script> -->
+<script src="./js/bootstrap.min.js"></script>
+
+</html>

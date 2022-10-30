@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container p-5">
+        <form method="post" action="/login">
+            <h3>Login </h3>
+            <div class="col-sm-6 pb-5">
+                <label for="email" class="label pt-3">Email</label>
+                <div class="pt-2">
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+                <label for="password" class="label pt-3">Password</label>
+                <div class="pt-2">
+                    <input type="password" class="form-control" name="password" id="password">
+                </div>
+                <div class="pt-2">
+                    <input type="submit" value="Login" id="login" class="btn btn-outline-primary">
+                </div>
+
+                <div class="text-danger"><strong>
+                        <% if(msg!=null) msg %>
+                    </strong></div>
+            </div>
+        </form>
+    </div>
+</body>
+
+<!-- <script>
+    document.getElementById("singleUpload").addEventListener("click", (e) => {
+        e.preventDefault()
+        const data = {
+            f
+        }
+        location.replace("/")
+    })
+</script> -->
+<script src="./js/bootstrap.min.js"></script>
+
+</html>
